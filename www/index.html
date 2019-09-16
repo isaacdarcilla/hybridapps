@@ -1,0 +1,105 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Thesis Generator - Isaac Arcilla</title>
+  <meta name="description" content="Cordova" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+
+  <!-- for ios 7 style, multi-resolution icon of 152x152 -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-barstyle" content="black-translucent">
+  <link rel="apple-touch-icon" href="../assets/images/logo.png">
+  <meta name="apple-mobile-web-app-title" content="Isaac Arcilla">
+  <!-- for Chrome on Android, multi-resolution icon of 196x196 -->
+  <meta name="mobile-web-app-capable" content="yes">
+
+
+  <link rel="stylesheet" href="js/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
+  <!-- build:css ../assets/styles/app.min.css -->
+  <link rel="stylesheet" href="js/styles/app.css" type="text/css" />
+  <!-- endbuild -->
+</head>
+<body style="background-color: #1b1b1b" id="generator">
+  
+  <div class="app" id="app">
+
+<!-- ############ LAYOUT START-->
+  
+  <!-- content -->
+  <div  id="content" class="app-content box-shadow-z0" role="main">
+    <div style="background-color: #ffa31a" class="app-header  box-shadow">
+        <div class="navbar">
+            <!-- Open side - Naviation on mobile -->
+            <a href="https://github.com/isaacdarcilla/hybridapps"target="_blank" class="navbar-item pull-left hidden-lg-up">
+              <span style="color: white"><b>Fork on Github</b></span>
+            </a>
+            <!-- / -->
+        
+            <!-- Page title - Bind to $state's title -->
+            <div class="navbar-item pull-left h5" ng-bind="$state.current.data.title" id="pageTitle"></div>
+           
+        
+            <!-- navbar collapse -->
+            <div class="collapse navbar-toggleable-sm" id="collapse">
+              <!-- link and dropdown -->
+              <ul class="nav navbar-nav">
+                <li class="nav-item dropdown">
+                  <a href="https://github.com/isaacdarcilla/hybridapps" target="_blank" class="nav-link" href data-toggle="dropdown">
+                    
+					  <span style="color: white"><b>Fork on Github</b></span>
+				
+                  </a>
+                </li>
+              </ul>
+              <!-- / -->
+            </div>
+            <!-- / navbar collapse -->
+        </div>
+    </div>
+  </div>
+    <div class="app-footer" style="color: #ffa31a">
+    
+    <div><br>
+        <center><p class="text" style="color: #ffa31a">Developed by <b><a href="mail-to:isaacdarcilla@yahoo.com">isaacdarcilla@yahoo.com</a></b></p></center>
+    </div>       	
+
+    </div>
+    <div ui-view class="app-body" id="view">
+
+<!-- ############ PAGE START-->
+<!-- only need a height for layout 4 -->
+<div style="margin-top: 120px">
+          <center><span style="font-size: 35px; color: white"><b>Thesis</b></span><a style="font-size: 35px;" class="label orange">generator</a></center>  
+</div>
+
+<div style="min-height: 100px"></div>
+
+<!-- ############ PAGE END-->
+    <div>
+        <center><p style="color:#ffa31a; font-size: 25px; margin-right: 10px; margin-left: 10px;"><b id="thesis-title"><img src="img/splash.png" width="120px" height="120px"></b></p></center>
+    </div>
+    <div><br>
+        <center><p class="text" style="color: #ffa31a">Tap anywhere to generate new title.</p></center>
+    </div>
+     
+    </div>
+  </div>
+  <!-- / -->
+
+  <!-- / -->
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script src="js/jquery-2.2.3.min.js"></script>
+
+<!-- endbuild -->
+</body>
+</html>
